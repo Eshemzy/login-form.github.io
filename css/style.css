@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --pry-bg-clr: #34495e;
+  --sec-bg-clr: #fff;
+  --offset-pry: #2c3e50;
+}
+body {
+  overflow: hidden;
+  background-color: var(--pry-bg-clr);
+}
+.container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+.wrapper {
+  max-width: 400px;
+  width: 100%;
+  background-color: var(--sec-bg-clr);
+  border-radius: 4px;
+  box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px 10px rgba(255, 255, 255, 0.3);
+}
+.title {
+  background-color: var(--offset-pry);
+  padding: 16px 0;
+  border-radius: 4px 4px 0 0 ;
+  text-align: center;
+}
+.title span {
+  font-size: 24px;
+  color: #fff;
+}
+.wrapper form {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wrapper form .row {
+  width: 100%;
+  position: relative;
+}
+.wrapper form .row i {
+  background-color: var(--offset-pry);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-radius: 6px 0 0 6px;
+}
+.wrapper form .row input {
+  width: 100%;
+  height: 100%;
+  padding: 8px 0 8px 50px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: all 300ms ease;
+  border: 1px solid lightgrey;
+}
+.wrapper form .row input:focus {
+  box-shadow: inset 0px 0px 1px 1px rgba(44, 62, 80, 0.25);
+}
+.forgot a {
+  text-decoration: none;
+  color: var(--pry-bg-clr);
+  font-size: 15px;
+  font-weight: 500;
+}
+.forgot a:hover {
+  text-decoration: underline;
+}
+.wrapper form .btn input {
+  cursor: pointer;
+  background-color: var(--offset-pry);
+  color: var(--sec-bg-clr);
+  font-size: 16px;
+  border-radius: 8px;
+  transition: all 300ms ease;
+  padding: 8px 0;
+  border: none;
+}
+.wrapper form .btn input:hover {
+  background-color: var(--pry-bg-clr);
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 2px #1b1b1b;
+}
+.wrapper form .su-link {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+.wrapper form .su-link a {
+  color: var(--pry-bg-clr);
+  font-weight: 500;
+  transition: all 300ms ease;
+}
+.wrapper form .su-link a:hover {
+  text-decoration: none;
+  border-radius: 5px;
+}
