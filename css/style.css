@@ -17,7 +17,7 @@ html {
   overflow: hidden;
   background-color: var(--pry-bg-clr);
 }
-.body-inner {
+.web-wrapper {
   max-width: 100%;
   min-height: 100vh;
   display: flex;
@@ -25,34 +25,32 @@ html {
   align-items: center;
   padding: clamp(1rem, 0.3rem + 4vw, 1.5rem);
 }
-.wrapper {
+.form-container {
   max-width: 25rem;
   width: 100%;
   background-color: var(--sec-bg-clr);
   border-radius: 4px;
   box-shadow: 0px 0px 50px 20px rgba(0, 0, 0, 0.3), 0px 0px 50px 10px rgba(255, 255, 255, 0.3);
 }
-.title {
+.form-title {
   background-color: var(--offset-pry);
   padding: clamp(0.5rem, -0.2rem + 4vw, 1rem) 0;
   border-radius: 4px 4px 0 0 ;
   text-align: center;
-}
-.title span {
   font-size: clamp(1.125rem, 0.6rem + 3vw, 1.5rem);
   color: #fff;
 }
-.wrapper form {
+.form-container form {
   padding: clamp(0.5rem, -0.2rem + 4vw, 1rem);
   display: flex;
   flex-direction: column;
   gap: clamp(0.5rem, -0.2rem + 4vw, 1rem);
 }
-.wrapper form .row {
+.form__row {
   max-width: 100%;
   position: relative;
 }
-.wrapper form .row i {
+.form__row i {
   background-color: var(--offset-pry);
   position: absolute;
   top: 0;
@@ -64,17 +62,18 @@ html {
   color: #fff;
   border-radius: 6px 0 0 6px;
 }
-.wrapper form .row input {
+.form__row input {
+  max-width: 100%;
   width: 100%;
   height: 100%;
-  padding: 8px 0 8px 50px;
+  padding: 0.5rem 0 0.5rem clamp(1.875rem, -1.188rem + 17.5vw, 4.063rem);
   border-radius: 8px;
   outline: none;
   font-size: clamp(0.688rem, 0.425rem + 1.5vw, 0.875rem);
   transition: box-shadow 300ms ease;
   border: 1px solid lightgrey;
 }
-.wrapper form .row input:focus {
+.form__row input:focus {
   box-shadow: inset 0px 0px 1px 1px rgba(44, 62, 80, 0.25);
 }
 .forgot a {
@@ -86,7 +85,7 @@ html {
 .forgot a:hover {
   text-decoration: underline;
 }
-.wrapper form .btn input {
+.form-btn input {
   cursor: pointer;
   background-color: var(--offset-pry);
   color: var(--sec-bg-clr);
@@ -96,22 +95,22 @@ html {
   padding: clamp(0.313rem, 0.05rem + 1.5vw, 0.5rem) 0;
   border: none;
 }
-.wrapper form .btn input:hover {
+.form-btn input:hover {
   background-color: var(--pry-bg-clr);
   transform: translateY(-2px);
   box-shadow: 2px 2px 2px #1b1b1b;
 }
-.wrapper form .su-link {
+.su-link {
   font-size: clamp(0.688rem, 0.425rem + 1.5vw, 0.875rem);
   font-weight: 500;
   text-align: center;
 }
-.wrapper form .su-link a {
+.su-link a {
   color: var(--pry-bg-clr);
   font-weight: 500;
   transition: all 300ms ease;
 }
-.wrapper form .su-link a:hover {
+.su-link a:hover {
   text-decoration: none;
   border-radius: 5px;
 }

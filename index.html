@@ -8,20 +8,18 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="body-inner">
-    <main class="wrapper">
-      <div class="title">
-        <span>Login</span>
-      </div>
+  <main class="web-wrapper">
+    <section class="form-container">
+      <h1 class="form-title">Login</h1>
 
       <form action="/auth-page" method="post">
-        <div class="row">
-          <i class="fas fa-user" for="username"></i>
+        <div class="form__row">
+          <i class="fa-solid fa-user" for="username"></i>
           <input type="text" name="username" id="username" placeholder="Email or username" required>
         </div>
         
-        <div class="row">
-          <i class="fas fa-lock" for="password"></i>
+        <div class="form__row">
+          <i class="fa-solid fa-user" for="password"></i>
           <input type="password" name="username" id="username" placeholder="Password" required>
         </div>
 
@@ -29,7 +27,7 @@
           <a href="#">Forgot Password?</a>
         </div>
 
-        <div class="row btn">
+        <div class="form__row form-btn">
           <input type="submit" name="username" id="username" value="Login">
         </div>
 
@@ -37,8 +35,8 @@
           <span>Not a member? <a href="#">Sign up here</a></span>
         </div>
       </form>
-    </main>
-  </div>
+    </section>
+  </main>
 
   <script src="https://kit.fontawesome.com/0efce2a90a.js" crossorigin="anonymous"></script>
 </body>
